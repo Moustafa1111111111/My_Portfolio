@@ -103,7 +103,7 @@ function getProjectData(projectId) {
         'diabetes': {
             title: 'Diabetes Classification',
             summary: 'Developed a classification model to predict the likelihood of diabetes based on various health parameters. Focused on data preprocessing, feature selection, and training a robust classification model.',
-            images: ['Diabetes/Dashboard.png'], // Use larger images
+            images: ['images/Diabetes/Dashboard.png'], // Use larger images
             technologies: ['Python', 'Pandas', 'Scikit-learn', 'Classification'],
             codeLink: 'https://github.com/Moustafa1111111111/Diabetes_Prediction_Project/blob/main/Diabetes_Dataset_Project(1).ipynb'
         },
