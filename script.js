@@ -110,7 +110,7 @@ function getProjectData(projectId) {
         'salary': {
             title: 'Salary Prediction',
             summary: 'Built a regression model to predict salaries based on experience, education, and skills. Included exploratory data analysis, feature engineering, and training a regression model.',
-            images: ['customer_chain/dashboard'], // Use larger images
+            images: ['customer_chain/dashboard.png'], // Use larger images
             technologies: ['Python', 'Pandas', 'Scikit-learn', 'Regression'],
             codeLink: 'https://github.com/Moustafa1111111111/Salary_Prediction_project/blob/main/Salary_Data_Science.ipynb'
         },
