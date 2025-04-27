@@ -108,18 +108,18 @@ function getProjectData(projectId) {
             codeLink: 'https://github.com/Moustafa1111111111/Diabetes_Prediction_Project/blob/main/Diabetes_Dataset_Project(1).ipynb'
         },
         'salary': {
-            title: 'Salary Prediction',
-            summary: 'Built a regression model to predict salaries based on experience, education, and skills. Included exploratory data analysis, feature engineering, and training a regression model.',
+            title: 'Customer Churn Analysis',
+            summary: 'In this project, I perform Customer Chain Analysis to study the entire customer journey, identify key touchpoints, and uncover opportunities to enhance satisfaction and drive better business outcomes.',
             images: ['customer_chain/dashboard.png'], // Use larger images
-            technologies: ['Python', 'Pandas', 'Scikit-learn', 'Regression'],
-            codeLink: 'https://github.com/Moustafa1111111111/Salary_Prediction_project/blob/main/Salary_Data_Science.ipynb'
+            technologies: ['Python', 'Pandas','Seaborn','Plotly', 'Scikit-learn'],
+            codeLink: 'https://www.kaggle.com/code/moustafabasheer/customer-churn-analysis'
         },
         'boston': {
-            title: 'Boston House Price Prediction',
-            summary: 'Developed a regression model to predict house prices in Boston using historical data. Involved data analysis, feature selection, and training a regression model.',
-            images: ['boston_large1.png', 'boston_large2.png'], // Use larger images
-            technologies: ['Python', 'Pandas', 'Scikit-learn', 'Regression'],
-            codeLink: 'https://github.com/Moustafa1111111111/Boston_House_Price_Prediction'
+            title: 'Netflix Analysis',
+            summary: 'In this project, I analyze the Netflix dataset, which contains detailed information about movies and TV shows available on the platform. The goal is to explore trends, content types, and key patterns to better understand Netflix’s offerings.',
+            images: ['netflix/dashboard.png'], // Use larger images
+            technologies: ['Python', 'Pandas','Seaborn','Poltly', 'Scikit-learn'],
+            codeLink: 'https://www.kaggle.com/code/moustafabasheer/netflix-dataset-analysis'
         },
         'cancer': {
             title: 'Breast Cancer Prediction',
