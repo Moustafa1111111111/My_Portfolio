@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moustafa | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0af2c0d1a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="images\WhatsApp Image 2024-07-29 at 06.01.04_e0dc6de0.jpg" alt="Moustafa Basheer Profile Picture">
+            </div>
+            <div class="hero-text">
+                <h1>Moustafa Basheer</h1>
+                <p class="hero-tagline">Data Scientist | AI Developer | Freelancer</p>
+                <nav>
+                    <button onclick="showSection('home')"><i class="fas fa-home"></i> Home</button>
+                    <button onclick="showSection('about')"><i class="fas fa-user"></i> About</button>
+                    <button onclick="showSection('projects')"><i class="fas fa-code"></i> Projects</button>
+                    <button onclick="showSection('experience')"><i class="fas fa-briefcase"></i> Experience</button>
+                    <button onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+                Hi, I'm <strong>Moustafa</strong>, a passionate <strong>Data Scientist</strong> and <strong>AI Engineer</strong>.
+                I specialize in developing AI models, data-driven solutions, and machine learning applications.
+                With expertise in <strong>Python, Deep Learning, Cloud Computing, and SDN</strong>, I create innovative
+                solutions for real-world challenges.
+            </p>
+            <p>
+                Explore my portfolio to see how I use <strong>AI and Data Science</strong> to solve complex problems.
+                Let’s build the future together! 🚀
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn" onclick="showSection('projects'); scrollToSection('projects')">View My Work</a>
+                <a href="#contact" class="btn secondary-btn" onclick="showSection('contact'); scrollToSection('contact')">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="about" class="content" style="display: none;">
+            <h2>About Me</h2>
+            <div class="about-me-container">
+                <div class="about-me-image">
+                    <img src="images\WhatsApp Image 2024-07-29 at 06.01.04_e0dc6de0.jpg" alt="Moustafa Basheer">
+                </div>
+                <div class="about-me-text">
+                    <p>
+                        I’m <strong>Moustafa</strong>, an <strong>AI Engineer and Data Scientist</strong> specializing in <strong>Machine Learning, Deep Learning, and Cloud-based AI Solutions</strong>.
+                        With a background in <strong>Electronics and Communication Engineering</strong>, I have a deep understanding of how AI can optimize data-driven applications.
+                    </p>
+
+                    <h3>💡 Skills & Expertise:</h3>
+                    <ul>
+                        <li><i class="fas fa-brain"></i> Machine Learning & Deep Learning</li>
+                        <li><i class="fas fa-chart-bar"></i> Data Science & Predictive Analytics</li>
+                        <li><i class="fas fa-cloud"></i> Cloud Computing (AWS, CloudSim)</li>
+                        <li><i class="fas fa-network-wired"></i> Software-Defined Networking (SDN)</li>
+                        <li><i class="fab fa-python"></i> Python, Flask, TensorFlow, PyTorch</li>
+                        <li><i class="fas fa-mobile-alt"></i> AI-Powered Mobile App Development (Flutter)</li>
+                    </ul>
+
+                    <h3>📌 Career Highlights:</h3>
+                    <ul>
+                        <li>🔹 Developed an AI-based <strong>Speech-to-Text Model</strong> fine-tuned for Arabic language.</li>
+                        <li>🔹 Created an AI-driven <strong>WhatsApp Message Converter</strong> for accessibility.</li>
+                        <li>🔹 Built predictive models for <strong>breast cancer detection, diabetes classification, and house price prediction</strong>.</li>
+                        <li>🔹 Integrated AI with <strong>SDN for cloud data center optimization</strong>.</li>
+                    </ul>
+
+                    <h3>🎯 My Goal:</h3>
+                    <p>
+                        I am on a mission to <strong>leverage AI and Data Science</strong> to create intelligent solutions that drive innovation in healthcare, business, and cloud computing.
+                        Whether it’s <strong>predictive modeling, AI-powered applications, or cloud-based optimizations</strong>, I am eager to collaborate on cutting-edge projects.
+                    </p>
+
+                    <h3>🚀 Let's Connect!</h3>
+                    <p>
+                        If you're looking for a <strong>Data Scientist, AI Engineer, or Cloud AI Developer</strong>, feel free to reach out.
+                        I’m always open to new opportunities and collaborations.
+                    </p>
+                    <button class="btn primary-btn" onclick="scrollToSection('contact')">Contact Me</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content" style="display: none;">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project" onclick="openProjectDetails('titanic')">
+                    <div class="project-media">
+                        <div class="slider" id="titanic-slider">
+                            <button class="prev" onclick="moveSlide(-1, 'titanic-slider', event)">&#10094;</button>
+                            <div class="slider-container" id="titanic-slider-container">
+                                <img src="images/titanic1.png" alt="Titanic Project Screenshot 1">
+                                <img src="images/titanic2.png" alt="Titanic Project Screenshot 2">
+                            </div>
+                            <button class="next" onclick="moveSlide(1, 'titanic-slider', event)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Titanic Classification Model (KNN)</h3>
+                        <p class="project-description">Predicting passenger survival on the Titanic using the K-Nearest Neighbors algorithm. This project involved data cleaning, feature engineering, model training, and evaluation to achieve a high level of accuracy.</p>
+                        <ul class="project-technologies">
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fas fa-table"></i> Pandas</li>
+                            <li><i class="fas fa-chart-line"></i> Scikit-learn</li>
+                            <li><i class="fas fa-project-diagram"></i> KNN</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Moustafa1111111111/Titanic_classification_project/blob/main/Titanic_Classification_modelss_using_KNN.ipynb" target="_blank">View Code</a>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" onclick="openProjectDetails('diabetes')">
+                    <div class="project-media">
+                        <div class="slider" id="diabetes-slider">
+                            <button class="prev" onclick="moveSlide(-1, 'diabetes-slider', event)">&#10094;</button>
+                            <div class="slider-container" id="diabetes-slider-container">
+                                <img src="images/diabetes1.png" alt="Diabetes Project Screenshot 1">
+                                <img src="images/diabetes.png" alt="Diabetes Project Screenshot 2">
+                            </div>
+                            <button class="next" onclick="moveSlide(1, 'diabetes-slider', event)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Diabetes Classification</h3>
+                        <p class="project-description">Developed a classification model to predict the likelihood of diabetes based on various health parameters. This project focused on data preprocessing, feature selection, and training a robust classification model.</p>
+                        <ul class="project-technologies">
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fas fa-table"></i> Pandas</li>
+                            <li><i class="fas fa-chart-line"></i> Scikit-learn</li>
+                            <li><i class="fas fa-check-square"></i> Classification</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Moustafa1111111111/Diabetes_Prediction_Project/blob/main/Diabetes_Dataset_Project(1).ipynb" target="_blank">View Code</a>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" onclick="openProjectDetails('salary')">
+                    <div class="project-media">
+                        <div class="slider" id="salary-slider">
+                            <button class="prev" onclick="moveSlide(-1, 'salary-slider', event)">&#10094;</button>
+                            <div class="slider-container" id="salary-slider-container">
+                                <img src="images/salary1.png" alt="Salary Prediction Screenshot 1">
+                                <img src="images/salary2.png" alt="Salary Prediction Screenshot 2">
+                            </div>
+                            <button class="next" onclick="moveSlide(1, 'salary-slider', event)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Salary Prediction</h3>
+                        <p class="project-description">Built a regression model to predict salaries based on factors such as experience, education, and skills. The project involved exploratory data analysis, feature engineering, and training a regression model to estimate salary ranges.</p>
+                        <ul class="project-technologies">
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fas fa-table"></i> Pandas</li>
+                            <li><i class="fas fa-chart-line"></i> Scikit-learn</li>
+                            <li><i class="fas fa-sliders-h"></i> Regression</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Moustafa1111111111/Salary_Prediction_project/blob/main/Salary_Data_Science.ipynb" target="_blank">View Code</a>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" onclick="openProjectDetails('boston')">
+                    <div class="project-media">
+                        <div class="slider" id="boston-slider">
+                            <button class="prev" onclick="moveSlide(-1, 'boston-slider', event)">&#10094;</button>
+                            <div class="slider-container" id="boston-slider-container">
+                                <img src="images/boston1.png" alt="Boston House Price Screenshot 1">
+                                <img src="images/boston2.png" alt="Boston House Price Screenshot 2">
+                            </div>
+                            <button class="next" onclick="moveSlide(1, 'boston-slider', event)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Boston House Price Prediction</h3>
+                        <p class="project-description">Developed a regression model to predict house prices in Boston using historical data. This project included data analysis, feature selection, and training a regression model to estimate property values.</p>
+                        <ul class="project-technologies">
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fas fa-table"></i> Pandas</li>
+                            <li><i class="fas fa-chart-line"></i> Scikit-learn</li>
+                            <li><i class="fas fa-home"></i> Regression</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Moustafa1111111111/Boston_House_Price_Prediction" target="_blank">View Code</a>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" onclick="openProjectDetails('cancer')">
+                    <div class="project-media">
+                        <div class="slider" id="cancer-slider">
+                            <button class="prev" onclick="moveSlide(-1, 'cancer-slider', event)">&#10094;</button>
+                            <div class="slider-container" id="cancer-slider-container">
+                                <img src="images/cancer1.png" alt="Breast Cancer Prediction Screenshot 1">
+                                <img src="images/cancer2.png" alt="Breast Cancer Prediction Screenshot 2">
+                            </div>
+                            <button class="next" onclick="moveSlide(1, 'cancer-slider', event)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Breast Cancer Prediction</h3>
+                        <p class="project-description">Developed a classification model to predict the presence of breast cancer based on medical imaging data. This project involved image preprocessing, feature extraction, and training a classification model for diagnostic purposes.</p>
+                        <ul class="project-technologies">
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fas fa-image"></i> Pandas</li>
+                            <li><i class="fas fa-chart-line"></i> Scikit-learn</li>
+                            <li><i class="fas fa-heartbeat"></i> Classification</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Moustafa1111111111/Breast_Cancer_Prediction" target="_blank">View Code</a>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="content" style="display: none;">
+            <h2>Experience & Certifications</h2>
+            <ul>
+                <li><i class="fas fa-graduation-cap"></i> <strong>IBM Data Scientist Trainee (DEPI)</strong> - Sep 2024 - Present</li>
+                <li><i class="fas fa-award"></i> <strong>HCIA-AI Training (Huawei)</strong> - Oct 2024 - Dec 2025</li>
+                <li><i class="fas fa-book"></i> <strong>Python Training (Jelecom)</strong> - Sep 2024 - Nov 2024</li>
+                <li><i class="fas fa-cloud"></i> <strong>AWS Cloud Training (NTI)</strong> - Aug 2024 - Sep 2024</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="content" style="display: none;">
+            <h2>Contact Me</h2>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:moustafa.basheer9999@gmail.com?subject=Freelance Inquiry">Email Me</a></p>
+            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/moustafa-basheer-2ba9a1247/" target="_blank">Visit My LinkedIn</a></p>
+            <p><i class="fab fa-upwork"></i> Upwork: <a href="https://www.upwork.com/freelancers/~013d7550961a12ed0f" target="_blank">Check My Upwork</a></p>
+            <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Moustafa1111111111" target="_blank">View My GitHub</a></p>
+        </section>
+    </main>
+
+    <div id="project-overlay" class="project-overlay">
+        <div class="project-modal">
+            <button class="close-button" onclick="closeProjectDetails()">×</button>
+            <h3 id="modal-title"></h3>
+            <div id="modal-content">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Moustafa Basheer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
