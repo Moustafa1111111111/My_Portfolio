@@ -78,7 +78,7 @@ function openProjectDetails(projectId) {
                 ${project.images.map(image => `<img src="images/${image}" alt="${project.title} Image">`).join('')}
             </div>
             <p><strong>Technologies:</strong> ${project.technologies.join(', ')}</p>
-            <p><a href="${project.codeLink}" target="_blank">View Code on GitHub</a></p>
+            <p><a href="${project.codeLink}" target="_blank">View Code on Kaggle</a></p>
         `;
         overlay.style.display = 'block';
     }
@@ -94,18 +94,18 @@ function getProjectData(projectId) {
     // For this example, we'll hardcode the data.
     const projectsData = {
         'titanic': {
-            title: 'Titanic Classification Model (KNN)',
-            summary: 'A machine learning project focused on predicting passenger survival on the Titanic using the K-Nearest Neighbors algorithm. Involved data cleaning, feature engineering, model training, and evaluation.',
-            images: ['titanic_large1.png', 'titanic_large2.png'], // Use larger images
-            technologies: ['Python', 'Pandas', 'Scikit-learn', 'KNN'],
-            codeLink: 'https://github.com/Moustafa1111111111/Titanic_classification_project/blob/main/Titanic_Classification_modelss_using_KNN.ipynb'
+            title: 'Sales Forecasting & Optimization',
+            summary: 'My project focuses on sales forecasting and optimization, where we predict future sales trends using data-driven models and optimize inventory and pricing strategies to maximize revenue. This helps businesses make smarter, proactive decisions based on accurate forecasts.',
+            images: ['sales_forecasting/dashboard.png'], // Use larger images
+            technologies: ['Python', 'Pandas','Seaborn','Plotly', 'Scikit-learn','Prophet','ARIMA','SARIMA'],
+            codeLink: 'https://www.kaggle.com/code/moustafabasheer/depi-graduation-project'
         },
         'diabetes': {
             title: 'Diabetes Classification',
             summary: 'Developed a classification model to predict the likelihood of diabetes based on various health parameters. Focused on data preprocessing, feature selection, and training a robust classification model.',
             images: ['diabetes/dashboard.png'], // Use larger images
             technologies: ['Python', 'Pandas', 'Scikit-learn', 'Classification'],
-            codeLink: 'https://github.com/Moustafa1111111111/Diabetes_Prediction_Project/blob/main/Diabetes_Dataset_Project(1).ipynb'
+            codeLink: 'https://www.kaggle.com/code/moustafabasheer/diabetes-prediction-model'
         },
         'salary': {
             title: 'Customer Churn Analysis',
@@ -122,11 +122,11 @@ function getProjectData(projectId) {
             codeLink: 'https://www.kaggle.com/code/moustafabasheer/netflix-dataset-analysis'
         },
         'cancer': {
-            title: 'Breast Cancer Prediction',
-            summary: 'Developed a classification model to predict the presence of breast cancer based on medical imaging data. Included image preprocessing, feature extraction, and training a classification model.',
-            images: ['cancer_large1.png', 'cancer_large2.png'], // Use larger images
+            title: 'Heart Failure Analysis',
+            summary: 'In my project, I analyzed patient health data to uncover key factors linked to heart failure. Through detailed data exploration and modeling, I aimed to enhance early detection and risk assessment.',
+            images: ['heart_failure/dashboard.png'], // Use larger images
             technologies: ['Python', 'Pandas', 'Scikit-learn', 'Classification'],
-            codeLink: 'https://github.com/Moustafa1111111111/Breast_Cancer_Prediction'
+            codeLink: 'https://www.kaggle.com/code/moustafabasheer/heart-failure-prediction'
         }
         // Add data for other projects here with larger image filenames and summaries
     };
