@@ -96,7 +96,7 @@ function getProjectData(projectId) {
         'titanic': {
             title: 'Sales Forecasting & Optimization',
             summary: 'My project focuses on sales forecasting and optimization, where we predict future sales trends using data-driven models and optimize inventory and pricing strategies to maximize revenue. This helps businesses make smarter, proactive decisions based on accurate forecasts.',
-            images: ['sales_forecasting/dashboard.png'], // Use larger images
+            images: ['sales_forecasting/dashboard1.png','sales_forecasting/dashboard2.png','sales_forecasting/dashboard3.png','sales_forecasting/dashboard4.png'], // Use larger images
             technologies: ['Python', 'Pandas','Seaborn','Plotly', 'Scikit-learn','Prophet','ARIMA','SARIMA'],
             codeLink: 'https://www.kaggle.com/code/moustafabasheer/depi-graduation-project'
         },
